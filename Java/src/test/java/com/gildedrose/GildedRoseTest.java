@@ -10,15 +10,16 @@ import org.junit.Test;
 public class GildedRoseTest {
     GlidedRoseNew app;
     ArrayList listeItem = new ArrayList();
-    Item item;
-    
     @Before
     public void setUp() {
-        item  = new Item("foo", 0, 0,false,true);
-        item  = new Item("Sulfuras", 0, 0,true,false);
-        item  = new Item("fooIncrease", 0, 0,false,true);
-        item  = new Item("Elixir", 0, 0,false,false);
-        listeItem.add(item);
+        Item item0  = new Item("foo", 0, 0,false,true);
+        Item item1  = new Item("Sulfuras", 0, 0,true,false);
+        Item item2  = new Item("fooIncrease", 0, 0,false,true);
+        Item item3  = new Item("Elixir", 0, 0,false,false);
+        listeItem.add(item0);
+        listeItem.add(item1);
+        listeItem.add(item2);
+        listeItem.add(item3);
         app = new GlidedRoseNew(listeItem);
     }//setUp()
     @Test
